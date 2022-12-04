@@ -12,7 +12,7 @@ dico = {i+1 : alpha[i] for i in range(0, len(alpha))}
 dico = {v: k for k, v in dico.items()}
 
 for elem in inputs:
-    elem.strip("\n")
+    elem = elem.strip("\n")
     half_1, half_2 = elem[:len(elem)//2], elem[len(elem)//2:]
     for item in half_1:
         if item in half_2:
